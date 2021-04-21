@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+/* Variables */
+:root {
+          --white: #FFFFFF;
+          --black: #000000;
+          --primary: #26303C;
+          --action: #447D50;
+          --background: #F4F4F5;
+          --tertiary: #F6F8F6;
+          --divider: rgba(0, 0, 0, 0.3);
+          --lato: 'Lato', sans-serif;
+          --comfortaa: 'Comfortaa', cursive;
+          --shadows: 'Shadows Into Light Two', cursive;
+}
+
+/* Document */   
+html {
+          font-family: var(--lato);
+          font-size: 14px;
+          color: var(--black);
+          margin: 0px;
+          padding: 0px;
+}
+
+body {
+          margin: 0px;
+          padding: 0px;
+}
+
+* {
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+}
+
+/* Text styles */
+.display-1, .display-2 {
+          font-family: var(--shadows );
+          color: var(--white);
+}
+
+.display-1 {
+          font-size: 2.5rem;
+          line-height: 3.75rem;
+}
+
+.display-2 {
+          font-size: 1.625rem;
+}
+
+h1, h2 {
+          font-family: var(--comfortaa);
+          font-weight: 700;
+}
+
+h1 { 
+          font-size: 2.625rem;        
+}
+
+h2 {
+          font-size: 2rem;         
+}
+
+h3 {
+          font-weight: 700;
+          font-size: 1.5rem;        
+}
+
+.body-1 {
+          font-weight: 400;
+          font-size: 1.375rem;
+          line-height: 2rem;
+}
+
+.body-2 {
+          font-family: var(--comfortaa);
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+          color: var(--white);
+}
+
+.caption {
+          font-weight: 400;
+          font-size: 1.375rem;
+          font-style: italic;
+          line-height: 2rem;
+}
+
+.btn {
+          font-weight: 700;
+          font-size: 1.1rem;
+          line-height: 2.75rem;
+          padding-left: 40px;
+          padding-right: 40px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          border-radius: 27px;
+          border: 0px;
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+}
+
+/* Buttons */
+.btn-primary {
+          color: var(--white);
+          background-color: var(--action);
+          border: 2px solid var(--action);
+}
+
+.btn-primary:hover {
+          color: var(--action);
+          background-color: var(--white);
+          border: 2px solid var(--action);
+}
+
+.btn-secondary {
+          color: var(--action);
+          background-color: var(--white);
+          border: 2px solid var(--action);
+}
+
+.btn-secondary:hover {
+          color: var(--white);
+          background-color: var(--action);
+}
+
+.btn-tertiary {
+          color: var(--action);
+          border: 2px solid var(--tertiary);
+          background-color: var(--tertiary);
+}
+
+.btn-tertiary:hover {
+          color: var(--action);
+          border: 2px solid var(--action);
+          background-color: var(--white);
+}
+
+button:hover {
+          filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
+          transform: scale(1.05);
+          transition: all .2s ease-in-out;
+}
+
+button span {
+          padding-left: 8px;
+          line-height: 3rem;
+          display: inline-block;
+          vertical-align: middle;
+}
+
+/* Navigation */
+nav {
+          background-color: var(--white);
+          filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.1));
+          padding: 0px 40px 0px 40px;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          position: sticky;
+          position: -webkit-sticky;
+          top: 0px;
+          z-index: 100;
+}
+
+nav ul {
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+          flex-grow: 1;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+}
+
+nav ul li {
+          display: inline-block;  
+}
+
+nav ul li:last-child{
+          padding-left: 16px;
+}
+
+nav a {
+          display: inline-block;
+          font-weight: 500;
+          font-size: 1.375rem;
+          line-height: 64px;
+          text-decoration: none;
+          color: var(--black);
+          border-bottom: 3px solid var(--white);
+          vertical-align: text-bottom; 
+          padding: 0px 24px 0px 24px;
+          transition: all .3s ease-in-out;
+}
+
+nav a:hover {
+          border-bottom: 3px solid var(--tertiary);
+          background-color: var(--tertiary);
+          transition: all .3s ease-in-out;
+}
+
+nav img {
+          vertical-align: middle;
+}
+
+.active-nav-time {
+          border-bottom: 3px solid var(--black);
+}
+
+/* main */
+
+/* section */
+.jumbotron {
+          width: auto;
+          height: 70vh;
+          min-height: 530px;
+          background-color: lightgray;
+          background: center / cover no-repeat url("../images/Hero.webp");
+          border-radius: 32px;
+          display: flex;
+          margin: 32px;
+          align-items: flex-start;
+          justify-content: space-between;
+}
+
+.logo {
+          width: 500px;
+          padding: 72px 0px 0px 100px;
+}
+
+.welcome-message {
+          width: 420px;
+          height: 100%;
+          background-color: var(--primary);
+          margin-right: 100px;
+          padding: 32px 72px 0px 32px;
+}
+
+/* Program Section */
+.program-container {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 32px;
+}
+
+.program-info-container {
+          position: sticky;
+          position: -webkit-sticky;
+          top: 100px;
+          height: 100%;
+          z-index: 99;
+}
+
+.program-info-container, 
+.program-list-container, 
+.section-illustration,
+.volunteer-details-container  {
+          width: 512px;
+          padding: 32px;
+}
+
+.program-details-container {
+          padding: 32px 0px 32px 0px;
+          border-bottom: 1px solid var(--divider);
+}
+
+/* Volunteer Section */
+.volunteer-container {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: center;
+          background-color: var(--background);
+          margin-top: 100px;
+}
+
+.section-illustration {
+          position: sticky;
+          position: -webkit-sticky;
+          top: 200px;
+          height: 100%;
+          z-index: 99;
+}
+
+.section-illustration img {
+          position: relative;
+          top: -100px;
+}
+
+.volunteer-details-container h2 {
+          margin-top: 56px;
+}
+
+.volunteer-intro {
+          border-bottom: 1px solid var(--divider);
+          padding: 0px 0px 56px 0px;
+}
+
+/* Photo Section */
+.gallery-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 56px;
+}
