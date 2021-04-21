@@ -2,7 +2,7 @@
 
 ## Table of contents
 * [General Info](#general-info)
-* [Live Preview](#livepreview)
+* [Live Preview](#live-preview)
 * [Technologies](#technologies)
 * [Design](#design)
 
@@ -17,7 +17,7 @@ https://an-ik.github.io/Twelve-Acre-Farm/
 
 ## Technologies
 * HTML5
-* CSS
+* CSS3
 * JS
 
 ## Design
