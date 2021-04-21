@@ -2,6 +2,7 @@
 
 ## Table of contents
 * [General Info](#general-info)
+* [Live Preview](#livepreview)
 * [Technologies](#technologies)
 * [Design](#design)
 
@@ -10,6 +11,9 @@ This is an in-progress build of https://twelveacrefarm.com/. I am redesigning th
 * Visual design enhancements
 * Usability improvements
 * A vanilla JS image slider to reduce dependencies
+
+## Live Preview
+https://an-ik.github.io/Twelve-Acre-Farm/
 
 ## Technologies
 * HTML5
