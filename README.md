@@ -3,7 +3,7 @@
 ## Table of contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
-* [Design] (#design)
+* [Design](#design)
 
 ## General Info
 This is an in-progress build of https://twelveacrefarm.com/. I am redesigning the site that includes...
