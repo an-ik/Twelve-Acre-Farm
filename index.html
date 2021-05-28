@@ -9,8 +9,8 @@
           <meta name="keywords" content="certified therapeutic riding, equine assisted therapy, equine assisted activities, EAA, horse therapy, healing, petting zoo, animals, new jersey, nj, dawn wessler">
           <meta name="author" content="Andy Dominik">
           <!-- Icons -->
-          <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-          <link rel="icon" href="favicon.png" type="image/x-icon">
+          <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
+          <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
           <!-- Fonts -->
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap">
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap">
@@ -35,18 +35,24 @@
 </head>
 <body>
           <nav>
-                    <ul>
-                              <li><a class="active-nav-time" href=""><img src="./public/images/icon-nav-home.svg"></a></li>
-                              <li><a href="">Programs</a></li>
-                              <li><a href="">Volunteer</a></li>
-                              <li><a href="">Photo Gallery</a></li>
-                              <li><a href="">Contact Us</a></li>
-                              <li><button class="btn btn-secondary">Pay/Donate<span class="material-icons">trending_flat</span></button></li>
-                    </ul>
-                    
+                    <button class="btn-menu">
+                              <span class="material-icons">menu</span><span class="logo-font">Twelve Acre Farm</span>
+                    </button>
+                              <ul>
+                                        <li><a class="active-nav-item" href="#home"><img src="./public/images/icon-nav-home.svg"></a></li>
+                                        <li><a href="#programs">Programs</a></li>
+                                        <li><a href="#volunteers">Volunteer</a></li>
+                                        <li><a href="#photogallery">Photo Gallery</a></li>
+                                        <li><a href="#contactus">Contact Us</a></li>
+                                        <li>
+                                                  <a id="diff" href="https://www.paypal.com/paypalme/twelveacrefarm" target="_blank">
+                                                            <button class="btn btn-secondary">Pay/Donate<span class="material-icons">trending_flat</span></button>
+                                                  </a>
+                                        </li>
+                              </ul>
           </nav>
           <main>
-                    <section>
+                    <section id="home">
                               <div class="jumbotron">
                                         <img class="logo" src="./public/images/logo-twelve-acre-farm.svg">
                                         <div class="welcome-message">
@@ -64,7 +70,7 @@
                               </div>
                     </section>
                     <section>
-                              <div class="program-container">
+                              <div id="programs" class="program-container">
                                         <div class="program-info-container">
                                                   <h1>Spring/Summer Programs</h1>
                                                   <p class="body-1">Twelve Acre Farms is offering a variety of programs in the spring and summer of 2021.</p>
@@ -75,7 +81,7 @@
                                                             <li>July 26th - 30th</li>          
                                                   </ul>
                                                   <p class="caption">Registration/liability forms are required for all activities. Six-foot social distancing is required for all outside activities. Masks are recommended for close contact.</p>
-                                                  <button class="btn btn-primary">Sign Up<span class="material-icons">trending_flat</span></button>
+                                                  <a href="#contactus"><button class="btn btn-primary">Sign Up<span class="material-icons">trending_flat</span></button></a>
                                         </div>
                                         <div class="program-list-container">
                                                   <div class="program-details-container">
@@ -124,7 +130,7 @@
                               </div>
                     </section>
                     <section>
-                           <div class="volunteer-container">
+                           <div id="volunteers" class="volunteer-container">
                                         <div class="section-illustration">
                                                   <img src="public/images/illustration-volunteer.svg">
                                         </div>
@@ -132,7 +138,7 @@
                                                   <div class="volunteer-intro">
                                                             <h1>Calling all Volunteers!</h1>
                                                             <p class="body-1">The farm is always on the look out for volunteers. Please contact us if you are interested in horse handling and/or farm chores. </p>
-                                                            <button class="btn btn-primary">Sign Up<span class="material-icons">trending_flat</span></button>
+                                                            <a href="#contactus"><button class="btn btn-primary">Sign Up<span class="material-icons">trending_flat</span></button></a>
                                                   </div>
                                                   <h2>Horse Handling</h2>
                                                   <p class="body-1">Help train rescued horses for new jobs interacting with humans. No experience required.</p>
@@ -154,7 +160,7 @@
                               </div>   
                     </section>
                     <section>
-                              <div class="gallery">
+                              <div id="photogallery" class="gallery">
                                         <h1>Photo Gallery</h1>
                                         <ul>
                                                   <li><a href="javascript:void(0)"><img src="./public/images/horse.jpg" alt="Photo of a horse"></a></li>
@@ -183,8 +189,8 @@
                               </div>
                     </section>
                     <section>
-                              <div class="contact-container">
-                                        <div class="contact-details">
+                              <div id="contactus" class="contact-container">
+                                        <div class="contact-details-container">
                                                   <h1>Contact Us</h1>
                                                   <p class="body-1">Sign up for an activity or ask a question.</p>
                                                   <div class="phone">
@@ -192,14 +198,16 @@
                                                                       <h3 class="mb-8">Phone</h3>
                                                                       <p class="body-1 mt-0">(732) 616-0529</p>
                                                             </div>
-                                                            <button class="btn btn-secondary">Call<span class="material-icons">call</span></button>
+                                                            <a href="tel:7326160529">
+                                                                      <button class="btn btn-secondary">Call<span class="material-icons">call</span></button>
+                                                            </a>
                                                   </div>
                                                   <div class="email">
                                                             <div>
                                                                       <h3 class="mb-8">Email</h3>
-                                                                      <p class="body-1 mt-0">dawn@twelveacrefarm.com</p>
+                                                                      <p id="copyEmail" class="body-1 mt-0">dawn@twelveacrefarm.com</p>
                                                             </div>
-                                                            <button class="btn btn-secondary">copy<span class="material-icons">content_copy</span></button>
+                                                            <button class="btn btn-secondary" onclick="addToClipboard()">copy<span class="material-icons">content_copy</span></button>
                                                   </div>
                                                   <div class="directions">
                                                             <div>
@@ -218,9 +226,12 @@
           </main>
           <footer>
                     <img src="./public/images/logo-twelve-acre-farm.svg">
-                    <img src="./public/images/icon-facebook.svg">
+                    <a href="https://www.facebook.com/Twelve-Acre-Farm-135303483744969/" target="_blank">
+                              <img src="./public/images/icon-facebook.svg">
+                    </a>
                     <p class="body-2">©2021 Twelve Acre Farm Lambertville, NJ. All rights reserved</p>
           </footer>
 </body>
 <script src="./public/js/view-master.js"></script>
+<script src="./public/js/functions.js"></script>
 </html>

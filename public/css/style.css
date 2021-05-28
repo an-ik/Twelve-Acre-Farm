@@ -19,6 +19,7 @@ html {
           font-family: var(--lato);
           font-size: 14px;
           color: var(--black);
+          scroll-behavior:smooth;
           margin: 0px;
           padding: 0px;
 }
@@ -51,7 +52,22 @@ body {
           margin-bottom: 8px
 }
 
+.d-none {
+          display: none;
+}
+
+.d-block {
+          display: block;
+}
+
 /* Text styles */
+.logo-font {
+          font-family: var(--comfortaa);
+          font-weight: 900;
+          color: var(--black);
+          letter-spacing: -1px;
+}
+
 .display-1, .display-2 {
           font-family: var(--shadows );
           color: var(--white);
@@ -156,6 +172,31 @@ h3 {
           background-color: var(--white);
 }
 
+.btn-menu {
+          border: none;
+          background-color: var(--white);
+          padding: 0px;
+          cursor: pointer;
+          display: none;
+          font-size: 1.275rem;
+          line-height: 64px;
+          text-decoration: none;
+          color: var(--black);
+          border-bottom: 3px solid var(--white);
+          vertical-align: text-bottom; 
+          padding: 0px;
+}
+
+.btn-menu:hover {
+          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.0));
+          transform: scale(1);
+          transition: all 0s ease-in-out;
+}
+
+.btn-menu span {
+          padding: 0px 16px 0px 0px;
+}
+
 button:hover {
           filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.2));
           transform: scale(1.05);
@@ -186,25 +227,19 @@ nav {
 nav ul {
           margin: 0px;
           padding: 0px;
-          display: flex;
-          flex-grow: 1;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+ 
 }
 
 nav ul li {
           display: inline-block;  
 }
 
-nav ul li:last-child{
-          padding-left: 16px;
-}
-
 nav a {
           display: inline-block;
           font-weight: 500;
-          font-size: 1.375rem;
+          font-size: 1.275rem;
           line-height: 64px;
           text-decoration: none;
           color: var(--black);
@@ -214,8 +249,13 @@ nav a {
           transition: all .3s ease-in-out;
 }
 
+#diff:hover {
+          border-bottom: 3px solid var(--white);
+          background-color: var(--white);
+}
+
 nav a:hover {
-          border-bottom: 3px solid var(--tertiary);
+          border-bottom: 3px solid var(--black);
           background-color: var(--tertiary);
           transition: all .3s ease-in-out;
 }
@@ -224,7 +264,7 @@ nav img {
           vertical-align: middle;
 }
 
-.active-nav-time {
+.active-nav-item {
           border-bottom: 3px solid var(--black);
 }
 
@@ -245,16 +285,17 @@ nav img {
 }
 
 .logo {
-          width: 500px;
-          padding: 72px 0px 0px 100px;
+          max-width: 50%;
+          padding: 64px 5% 0px 5%;
 }
 
 .welcome-message {
-          width: 420px;
+          min-width: 320px;
+          max-width: 420px;
           height: 100%;
           background-color: var(--primary);
-          margin-right: 100px;
-          padding: 32px 72px 0px 32px;
+          margin-right: 5%;
+          padding: 32px 32px 0px 32px;
 }
 
 /* Program Section */
@@ -278,7 +319,7 @@ nav img {
 .program-list-container, 
 .section-illustration,
 .volunteer-details-container,
-.contact-details {
+.contact-details-container {
           width: 512px;
           padding: 32px;
 }
@@ -329,11 +370,13 @@ nav img {
           background-color: var(--background);
           margin-top: 100px;
           padding-top: 32px;
+          
 }
 
-.contact-container .section-illustration {
+.section-illustration {
           display: flex;
           justify-content: right;
+          position: relative;
 }
 
 .contact-details h1 {
@@ -345,6 +388,7 @@ nav img {
 .directions {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           justify-content:space-between;
           align-items: center;
 }
@@ -354,19 +398,100 @@ footer {
           flex-wrap: nowrap;
           flex-direction: column;
           align-items: center;
+          text-align: center;
           background-color: var(--primary);
-          padding-top: 172px;
+          padding-top: 87px;
           padding-bottom: 72px;
+          padding: 87px 24px 72px 24px;
 }
 
-footer img:first-of-type {
+footer img {
           width: 300px;
 }
 
-footer img:last-of-type {
+footer a img {
           width: 50px;
           margin: 32px 0px 32px 0px;
 }
 
-
+@media only screen and (max-width: 768px) {
+          .btn-menu {
+                    display: block;
+          }
+          nav {
+                    flex-direction: column;
+                    align-items: flex-start;
+          }
+          nav ul {
+                    display: none;
+                    width: 100%;
+                    padding-bottom: 32px;
+          }
+          nav ul li:first-child {
+                    display: none;
+          }
+          nav ul li {
+                    display: block;
+                    text-align: left;
+          }
+          
+          nav a {
+                    line-height: 52px;
+                    width: 100%;
+                    padding: 0px 24px 0px 0px;
+          }
+          .active-nav-item {
+                    border-bottom: 3px solid var(--white);
+          }
+          .logo {
+                    display: none;
+          }
+          .welcome-message {
+                    margin-right: auto;
+                    margin-left: auto;
+                    min-width: none;
+                    max-width: none;
+                    width: 65%;
+                    padding: 24px;
+          }
+          .program-container,
+          .volunteer-container,
+          .contact-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 32px;
+          }
+          .program-info-container,
+          .program-details-container {
+                    position: relative;
+                    width: auto;
+                    top: 0px;
+          }
+          .section-illustration img, 
+          .section-illustration {
+                    display: none;
+          }
+          .program-info-container, 
+          .program-list-container, 
+          .section-illustration,
+          .volunteer-details-container,
+          .contact-details-container {
+                    width: auto;
+          }
+          .volunteer-intro {
+                    border-bottom: none;
+                    padding-bottom: 32px;
+          }
+          .phone,
+          .email,
+          .directions {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content:space-between;
+                    align-items:flex-start;
+          }
+}
+        
 
