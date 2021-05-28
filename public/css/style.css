@@ -265,7 +265,7 @@ nav img {
 }
 
 .active-nav-item {
-          border-bottom: 3px solid var(--black);
+          border-bottom: 3px solid var(--white);
 }
 
 /* main */
