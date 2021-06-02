@@ -1,4 +1,14 @@
 {
-    "name": "twelveAcreFarm",
-    "version": "1.0.0",
+    "name": "twelveacrefarm",
+    "description": "Website for Twelve Acre Farm",
+    "homepage": "http://twelveacrefarm.com",
+    "author": "Andy Dominik <andominik@gmail.com    >",
+    "contributors": [],
+    "dependencies": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/an-ik/Twelve-Acre-Farm"
+    },
+    "main": "index.html",
+    "version": "1.0.0"
 }
