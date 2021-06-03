@@ -10,5 +10,6 @@
         "url": "https://github.com/an-ik/Twelve-Acre-Farm"
     },
     "main": "index.html",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "start": []
 }
