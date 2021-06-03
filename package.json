@@ -1,15 +1,19 @@
 {
-    "name": "twelveacrefarm",
-    "description": "Website for Twelve Acre Farm",
-    "homepage": "http://twelveacrefarm.com",
-    "author": "Andy Dominik <andominik@gmail.com    >",
-    "contributors": [],
-    "dependencies": [],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/an-ik/Twelve-Acre-Farm"
-    },
-    "main": "index.html",
-    "version": "1.0.0",
-    "start": "index.html"
+  "name": "twelve-acre-farm",
+  "version": "1.0.0",
+  "description": "## Table of contents * [General Info](#general-info) * [Live Preview](#live-preview) * [Technologies](#technologies) * [Design](#design)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an-ik/Twelve-Acre-Farm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an-ik/Twelve-Acre-Farm/issues"
+  },
+  "homepage": "https://github.com/an-ik/Twelve-Acre-Farm#readme"
 }
