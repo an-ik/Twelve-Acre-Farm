@@ -4,14 +4,13 @@
   "description": "## Table of contents * [General Info](#general-info) * [Live Preview](#live-preview) * [Technologies](#technologies) * [Design](#design)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node App.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/an-ik/Twelve-Acre-Farm.git"
   },
-  "author": "",
+  "author": "Andy Dominik",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/an-ik/Twelve-Acre-Farm/issues"

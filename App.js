@@ -1,14 +1,21 @@
-const http = require('http');
+//===================== REQUIRING ROUTES
 
-const hostname = '127.0.0.1';
-const port = 3000;
+var indexRoutes = require("./routes/index")
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
+//===================== CONFIG
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.use(express.static(__dirname + "/public"));
+app.use(methodOverride("_method"));
+app.use(flash());
+
+// ==================== START SERVER
+
+
+// app.listen(3000, function(){
+// 	console.log("The YelpCamp Server has Started")	
+// });
+
+// var port = process.env.PORT || 3000;
+// app.listen(port, function () {
+//     console.log("Server Has Started!");
+// });
