@@ -1,19 +1,16 @@
 {
   "name": "twelve-acre-farm",
   "version": "1.0.0",
-  "description": "## Table of contents * [General Info](#general-info) * [Live Preview](#live-preview) * [Technologies](#technologies) * [Design](#design)",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/an-ik/Twelve-Acre-Farm.git"
-  },
-  "author": "Andy Dominik",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/an-ik/Twelve-Acre-Farm/issues"
-  },
-  "homepage": "https://github.com/an-ik/Twelve-Acre-Farm#readme"
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^2.0.7"
+  }
 }

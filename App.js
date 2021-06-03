@@ -1,21 +1,16 @@
-//===================== REQUIRING ROUTES
+const express = require('express');
+const app = express();
+const path = require('path');
+const router = express.Router();
 
-var indexRoutes = require("./routes/index")
-
-//===================== CONFIG
-
-app.use(express.static(__dirname + "/public"));
-app.use(methodOverride("_method"));
-app.use(flash());
-
-// ==================== START SERVER
-
-
-// app.listen(3000, function(){
-// 	console.log("The YelpCamp Server has Started")	
-// });
-
-var port = process.env.PORT || 3000;
-app.listen(port, function () {
-    console.log("Server Has Started!");
+router.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/index.html'));
+    //__dirname : It will resolve to your project folder.
 });
+
+//add the router
+app.use('/', router);
+app.use(express.static(__dirname + '/public'));
+app.listen(process.env.port || 3000);
+
+console.log('Running at Port 3000');
