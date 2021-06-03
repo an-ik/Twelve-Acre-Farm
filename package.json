@@ -4,7 +4,8 @@
   "description": "## Table of contents * [General Info](#general-info) * [Live Preview](#live-preview) * [Technologies](#technologies) * [Design](#design)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
   },
   "repository": {
     "type": "git",
