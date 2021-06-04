@@ -12,6 +12,9 @@ This is an in-progress build of https://twelveacrefarm.com/. I am redesigning th
 * Usability improvements
 * A vanilla JS image slider to reduce dependencies
 
+## Live Preview
+https://an-ik.github.io/Twelve-Acre-Farm/
+
 ## Technologies
 * HTML5
 * CSS3
