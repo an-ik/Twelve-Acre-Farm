@@ -344,14 +344,13 @@ nav img {
 .section-illustration {
     position: sticky;
     position: -webkit-sticky;
-    top: 200px;
     height: 100%;
     z-index: 99;
 }
 
 .section-illustration img {
     position: relative;
-    top: -100px;
+    width: 100%;
 }
 
 .volunteer-details-container h2 {
@@ -377,7 +376,7 @@ nav img {
 
 .section-illustration {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     position: relative;
 }
 
