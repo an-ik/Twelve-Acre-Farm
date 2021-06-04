@@ -4,13 +4,13 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/dist/views/index.html'));
+    res.sendFile(path.join(__dirname + '/views/index.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 //add the router
 app.use('/', router);
-app.use(express.static(__dirname + '/dist/public'));
+app.use(express.static(__dirname + '/public'));
 app.listen(process.env.PORT || 5000);
 
 console.log('Running at Port 5000');
