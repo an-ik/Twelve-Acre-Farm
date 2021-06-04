@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
 
 //add the router
 app.use('/', router);
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/views'));
 app.listen(process.env.PORT || 5000);
 
 console.log('Running at Port 5000');
