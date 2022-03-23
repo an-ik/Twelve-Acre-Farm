@@ -270,6 +270,26 @@ nav img {
     border-bottom: 3px solid var(--white);
 }
 
+.alert {
+          width: auto;
+          padding: 16px 48px 16px 48px;
+          background-color: var(--action);
+          color: var(--white);
+          font-weight: 400;
+          font-size: 1.3rem;
+          text-align: center;
+}
+
+.alert a:link {
+          color: var(--white);
+          text-decoration: underline;
+}
+
+.alert a:visited {
+          color: var(--white);
+          text-decoration: underline;
+}
+
 /* main */
 
 /* section */
