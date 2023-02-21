@@ -364,14 +364,13 @@ nav img {
 .section-illustration {
     position: sticky;
     position: -webkit-sticky;
-    top: 200px;
     height: 100%;
+    top: 50px;
     z-index: 99;
 }
 
 .section-illustration img {
-    position: relative;
-    top: -100px;
+    top: 50px;
 }
 
 .volunteer-details-container h2 {
@@ -395,11 +394,6 @@ nav img {
 
 }
 
-.section-illustration {
-    display: flex;
-    justify-content: right;
-    position: relative;
-}
 
 .contact-details h1 {
     margin-bottom: 0px;
@@ -413,6 +407,7 @@ nav img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 footer {
@@ -501,7 +496,8 @@ footer a img {
     }
 
     .section-illustration img,
-    .section-illustration {
+    .section-illustration,
+    .contact-image-container img {
         display: none;
     }
 
