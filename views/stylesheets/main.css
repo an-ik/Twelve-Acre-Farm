@@ -274,7 +274,7 @@ nav img {
 .alert {
           width: auto;
           padding: 16px 48px 16px 48px;
-          background-color: var(--action);
+          background-color: #721c24;
           color: var(--white);
           font-weight: 400;
           font-size: 1.3rem;
