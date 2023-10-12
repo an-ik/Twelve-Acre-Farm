@@ -6,6 +6,7 @@
     --black: #000000;
     --primary: #26303C;
     --action: #447D50;
+    --alert-warning: #856404;
     --background: #F4F4F5;
     --tertiary: #F6F8F6;
     --divider: rgba(0, 0, 0, 0.3);
@@ -280,6 +281,10 @@ nav img {
           font-weight: 400;
           font-size: 1.3rem;
           text-align: center;
+}
+
+.alert-warning {
+          background-color: var(--alert-warning);
 }
 
 .alert a:link {
