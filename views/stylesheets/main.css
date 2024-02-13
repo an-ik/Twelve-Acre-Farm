@@ -7,6 +7,7 @@
     --primary: #26303C;
     --action: #447D50;
     --alert-warning: #856404;
+    --alert-new: #ffb703;
     --background: #F4F4F5;
     --tertiary: #F6F8F6;
     --divider: rgba(0, 0, 0, 0.3);
@@ -276,8 +277,8 @@ nav img {
 .alert {
           width: auto;
           padding: 16px 48px 16px 48px;
-          background-color: var(--action);
-          color: var(--white);
+          background-color: var(--alert-new);
+          color: var(--black);
           font-weight: 400;
           font-size: 1.3rem;
           text-align: center;
@@ -288,12 +289,12 @@ nav img {
 }
 
 .alert a:link {
-          color: var(--white);
+          color: var(--black);
           text-decoration: underline;
 }
 
 .alert a:visited {
-          color: var(--white);
+          color: var(--black);
           text-decoration: underline;
 }
 
@@ -439,6 +440,13 @@ footer a img {
 }
 
 @media only screen and (max-width: 768px) {
+
+          .jumbotron {
+
+                    border-radius: 0px;
+                    margin: 0px;
+                }
+
     .btn-menu {
         display: block;
     }
