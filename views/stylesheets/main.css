@@ -372,7 +372,7 @@ nav img {
 .em-container {
     border-radius: 32px;
     border: 1px solid var(--alert-new);
-    padding-left: 32px;
+    padding: 32px;
     background-color: rgba(255, 183, 2, 0.2);
 }
 
